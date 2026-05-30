@@ -8,20 +8,13 @@
 
 ## 파일 구성
 
-|폴더&파일 이름 |설명                         |
-
-|:--        |:--                          |
-
-|codes       |분류를 위한 CNN 관련 소스 코드    |
-
-|logs & figure     |Scratch 훈련/테스트 그래프 출력 화면 & 로그 캡  |
-
-|cnn_params.pkl    |직접 scratch부터 새로 학습하여 저장한 분류 pkl |
-
-|test_acc.npy    |test 정확도 기록 |
-
-|train_acc.npy    |train 정확도 기 |
-
+| 폴더 & 파일 이름 | 설명 |
+|-----------------|------|
+| codes | 분류를 위한 CNN 관련 소스 코드 |
+| logs & figure | Scratch 훈련/테스트 그래프 출력 화면 및 로그 캡처 |
+| cnn_params.pkl | Scratch부터 직접 학습하여 저장한 분류 모델(.pkl) |
+| test_acc.npy | Test 정확도 기록 |
+| train_acc.npy | Train 정확도 기록 |
 
 
 
@@ -51,8 +44,6 @@ scratch 폴더에서 실행하세요. (Fashion MNIST 데이터셋 다운 후 학
 $ cd scratch
 
 $ python codes/dataset/mnist.py
-
-
 
 $ python codes/cnn/train_deepnet.py
 
