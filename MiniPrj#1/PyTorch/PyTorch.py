@@ -88,24 +88,24 @@ train_loader = DataLoader(
     train_dataset,
     batch_size=BATCH_SIZE,
     shuffle=True,
-    num_workers=2,
-    pin_memory=True
+    num_workers=0,
+    pin_memory=False
 )
 
 train_eval_loader = DataLoader(
     train_eval_dataset,
     batch_size=BATCH_SIZE,
     shuffle=False,
-    num_workers=2,
-    pin_memory=True
+    num_workers=0,
+    pin_memory=False
 )
 
 test_loader = DataLoader(
     test_dataset,
     batch_size=BATCH_SIZE,
     shuffle=False,
-    num_workers=2,
-    pin_memory=True
+    num_workers=0,
+    pin_memory=False
 )
 
 
